@@ -2,16 +2,10 @@
 		<div id="wrapper" class="container">
 			<section class="navbar main-menu">
 				<div class="navbar-inner main-menu">				
-					<a href="index.html" class="logo pull-left"><img src="themes/images/logo.png" class="site_logo" alt=""></a>
+					<a href="index.html" class="logo pull-left"><img src="<?php echo base_url() ?>assets/themes/images/logo.png" class="site_logo" alt=""></a>
 					<nav id="menu" class="pull-right">
 						<ul>
-							<li><a href="./products.html">Woman</a>					
-								<ul>
-									<li><a href="./products.html">Lacinia nibh</a></li>									
-									<li><a href="./products.html">Eget molestie</a></li>
-									<li><a href="./products.html">Varius purus</a></li>									
-								</ul>
-							</li>															
+							<li><a href="<?php echo base_url('index.php/Home/Homepage')?>">Home</a></li>																		
 							<li><a href="./products.html">Man</a></li>			
 							<li><a href="./products.html">Sport</a>
 								<ul>									
