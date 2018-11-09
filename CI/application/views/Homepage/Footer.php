@@ -8,7 +8,7 @@
 							<li><a href="./about.html">About Us</a></li>
 							<li><a href="./contact.html">Contac Us</a></li>
 							<li><a href="./cart.html">Your Cart</a></li>
-							<li><a href="./register.html">Login</a></li>							
+							<li><a href="./register.html">Logout</a></li>							
 						</ul>					
 					</div>
 					<div class="span4">
