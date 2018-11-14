@@ -1,18 +1,18 @@
 </head>
+
+<?php $this->load->model('M_login'); ?>
     <body>		
 		<div id="top-bar" class="container">
 			<div class="row">
 				<div class="span4">
-					<!-- <form method="POST" class="search_form">
-						<input type="text" class="input-block-level search-query" Placeholder="eg. T-sirt">
-					</form> -->
 				</div>
 				<div class="span8">
 					<div class="account pull-right">
+						<?php $akun = $this-> M_login ->select_where('tbl_pelanggan',$this->session->userdata('id_pelanggan'))->row();?>
 						<ul class="user-menu">				
-							<li>My Account</li>
-							<li>Your Cart</li>
-							<li>Checkout</li>					
+							<li><?php echo $akun->NAMA_PEL; ?></li>
+							<li><a href="<?php echo base_url('index.php/Checkout')?>">Keranjang</a></li>
+							<li>Transaksi</li>					
 							<li><a href="<?php echo base_url('index.php/Login/logout')?>">Logout</a></li>		
 						</ul>
 					</div>

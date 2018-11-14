@@ -3,14 +3,14 @@
 				<div class="flexslider">
 					<ul class="slides">
 						<li>
-							<img src="<?php echo base_url() ?>assets/themes/images/carousel/banner-1.jpg" alt="" />
+							<img src="<?php echo base_url() ?>assets/themes/images/slideshow/sari.jpg" alt="" />
 						</li>
 						<li>
-							<img src="<?php echo base_url() ?>assets/themes/images/carousel/banner-2.jpg" alt="" />
+							<img src="<?php echo base_url() ?>assets/themes/images/slideshow/sarirasa.jpg" alt="" />
 							<div class="intro">
-								<h1>Mid season sale</h1>
-								<p><span>Up to 50% Off</span></p>
-								<p><span>On selected items online and in stores</span></p>
+								<h1>Sari Rasa Pusat Oleh-oleh Khas Jember</h1>
+								<p><span>JL. Trunojoyo No. 90,91,92 Jember</span></p>
+								<p><span>Cabang : JL. Gatot Subroto (samping Hotel Dakam) Jember</span></p>
 							</div>
 						</li>
 					</ul>

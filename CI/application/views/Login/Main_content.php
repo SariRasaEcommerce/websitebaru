@@ -1,6 +1,8 @@
 <?php $this->load->view('Homepage/Javascript_footer'); ?>
 <?php $this->load->view('Homepage/Navbar_mainmenu'); ?>
 <?php $this->load->view('Login/Header_text'); ?>
+				<h4><span>Login or Regsiter</span></h4>
+
 
 			</section>			
 			<section class="main-content">				
