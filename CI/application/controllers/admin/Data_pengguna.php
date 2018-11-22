@@ -14,7 +14,7 @@ class Data_pengguna extends CI_Controller {
 		$data = array(
 			'data_pengguna' => $this -> Datapengguna_model -> get_datapengguna(),
 		);
-		$this->load->view('Datamaster/Data_pengguna', $data);
+		$this->load->view('admin/Datamaster/Data_pengguna', $data);
 		
 	}
 

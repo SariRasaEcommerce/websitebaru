@@ -1,5 +1,5 @@
-<?php $this->load->view('Home/js'); ?>
-<?php $this->load->view('Home/Main_header'); ?>
+<?php $this->load->view('admin/Home/js'); ?>
+<?php $this->load->view('admin/Home/Main_header'); ?>
 <div class="main-panel">
     <div class="content">
         <div class="container-fluid">
@@ -11,7 +11,7 @@
                                             <div class="card-title">Form Tambah Data Barang</div>
                                         </div>
                                         <div class="card-body">
-                                            <form method="post" action="<?php echo base_url(). 'index.php/Data_barang/editaction'; ?>" enctype="multipart/form-data">
+                                            <form method="post" action="<?php echo base_url(). 'index.php/admin/Data_barang/editaction'; ?>" enctype="multipart/form-data">
                                             <!-- <div class="form-group">
                                                 <label for="squareSelect">Nama Admin</label>
                                                 <select class="form-control input-square" id="squareSelect" name="adminn">
@@ -52,10 +52,11 @@
                                         </div>
                                         <div class="card-action">
                                             <button class="btn btn-success" type="submit" name="btnSubmit">Submit</button>
-                                            <button class="btn btn-danger">Cancel</button>
-                                        </div>
                                         </form>
+                                            <a href="<?php echo base_url() ?>index.php/admin/Data_barang">
+                                                <button class="btn btn-danger">Cancel</button></a>
+                                        </div>
                                 </div>
                     </div>
-<?php $this->load->view('Sidebar/databarang'); ?>
-<?php $this->load->view('Home/Footer'); ?>
+<?php $this->load->view('admin/Sidebar/databarang'); ?>
+<?php $this->load->view('admin/Home/Footer'); ?>
