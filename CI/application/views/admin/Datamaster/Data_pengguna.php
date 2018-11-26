@@ -1,6 +1,6 @@
- <?php $this->load->view('Home/js'); ?>
+ <?php $this->load->view('admin/Home/js'); ?>
 
-  <?php $this->load->view('Home/Main_header'); ?>
+  <?php $this->load->view('admin/Home/Main_header'); ?>
 
   <div class="main-panel">
 
@@ -45,6 +45,7 @@
               <th>Alamat</th>
 
               <th>Email</th>
+              <th>Action</th>
 
             </tr>
 
@@ -64,8 +65,6 @@
 
             <tr>
 
-              <th scope="row"><?php echo $no++?></th>
-
               <td><?php echo $pengguna -> ID_PELANGGAN ?></td>
 
               <td><?php echo $pengguna -> NAMA_PEL ?></td>
@@ -79,6 +78,8 @@
               <td><?php echo $pengguna -> ALAMAT_PEL ?></td>
 
               <td><?php echo $pengguna -> EMAIL ?></td>
+              <td><a href="#">
+                  <button class="btn btn-primary">Konfirmasi</button></a></td>
 
             </tr>
 
@@ -97,11 +98,6 @@
     </div>
 
   </div>
-<<<<<<< HEAD
-  <?php $this->load->view('Sidebar/datapengguna'); ?>
-=======
-
-  <?php $this->load->view('Sidebar/datapengguna'); ?>
-
->>>>>>> 0afe52546903ece1151969e50c71e018949dd4f1
-  <?php $this->load->view('Home/Footer'); ?>
+  <?php $this->load->view('admin/Sidebar/datapengguna'); ?>
+  <?php $this->load->view('admin/Sidebar/datapengguna'); ?>
+  <?php $this->load->view('admin/Home/Footer'); ?>

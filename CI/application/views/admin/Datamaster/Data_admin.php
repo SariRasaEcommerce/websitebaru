@@ -1,5 +1,5 @@
-  <?php $this->load->view('Home/js'); ?>
-  <?php $this->load->view('Home/Main_header'); ?>
+  <?php $this->load->view('admin/Home/js'); ?>
+  <?php $this->load->view('admin/Home/Main_header'); ?>
   <div class="main-panel">
     <div class="content">
         <div class="container-fluid">
@@ -14,7 +14,7 @@
       <div class="table-responsive">
         <table class="table table-bordered">
           <thead>
-            <a href="<?php echo base_url() ?>index.php/Data_admin/insert"><button class="btn btn-primary">Tambah Data Barang</button></a>
+            <a href="<?php echo base_url() ?>index.php/admin/Data_admin/insert"><button class="btn btn-primary">Tambah Data Barang</button></a>
             <tr>
               <th>No</th>
               <th>Nama Lengkap</th>
@@ -38,9 +38,9 @@
               <td><?php echo $admin -> NO_TELP ?></td>
               <td><?php echo $admin -> EMAIL ?></td>
               <td><img src="<?php echo base_url().$admin -> IMG ?>" width="100" height="100"></td>
-              <td><a href="<?php echo base_url('index.php/Data_admin/edit/'.$admin -> ID_ADMIN) ?>">
+              <td><a href="<?php echo base_url('index.php/admin/Data_admin/edit/'.$admin -> ID_ADMIN) ?>">
                   <button class="btn btn-primary">EDIT</button></a>
-                  <a href="<?php echo base_url('index.php/Data_admin/hapus/'.$admin-> ID_ADMIN) ?>">
+                  <a href="<?php echo base_url('index.php/admin/Data_admin/hapus/'.$admin-> ID_ADMIN) ?>">
                   <button class="btn btn-primary" onclick="javascript: return confirm('Anda Yakin Akan Menghapus ?')">HAPUS</button></a></td>
             </tr>
             <?php
@@ -51,5 +51,5 @@
       </div>
     </div>
   </div>
-  <?php $this->load->view('Sidebar/dataadmin'); ?>
-  <?php $this->load->view('Home/Footer'); ?>
+  <?php $this->load->view('admin/Sidebar/dataadmin'); ?>
+  <?php $this->load->view('admin/Home/Footer'); ?>
