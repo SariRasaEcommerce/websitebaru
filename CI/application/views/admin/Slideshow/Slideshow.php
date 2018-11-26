@@ -31,7 +31,7 @@
                                         <tr>
                                             <td scope="row"><?php echo $slideshow -> ID_SLIDE ?></td>
                                             <td><?php echo $slideshow -> ID_ADMIN ?></td>
-                                            <td><?php echo $slideshow -> IMG ?></td>
+                                            <td><img src="<?php echo base_url().$slideshow -> IMG ?>" width="100" height="100"></td>
                                             <td><a href="<?php echo base_url('index.php/admin/Slideshow/edit/'.$slideshow -> ID_SLIDE) ?>"><button class="btn btn-primary">EDIT</button></a>
                                                 <a href="<?php echo base_url('index.php/admin/Slideshow/hapus/'.$slideshow-> ID_SLIDE) ?>" ><button class="btn btn-primary" onclick="javascript: return confirm('Anda Yakin Akan Menghapus ?')">HAPUS</button></a></td>
                                         </tr>
