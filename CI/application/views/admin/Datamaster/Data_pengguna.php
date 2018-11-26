@@ -1,6 +1,6 @@
- <?php $this->load->view('Home/js'); ?>
+ <?php $this->load->view('admin/Home/js'); ?>
 
-  <?php $this->load->view('Home/Main_header'); ?>
+  <?php $this->load->view('admin/Home/Main_header'); ?>
 
   <div class="main-panel">
 
@@ -106,4 +106,4 @@
 
   </div>
 
-  <?php $this->load->view('Sidebar/datapengguna'); ?>
+  <?php $this->load->view('admin/Sidebar/datapengguna'); ?>
