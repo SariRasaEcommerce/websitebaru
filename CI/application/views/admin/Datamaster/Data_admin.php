@@ -14,7 +14,7 @@
       <div class="table-responsive">
         <table class="table table-bordered">
           <thead>
-            <a href="<?php echo base_url() ?>index.php/admin/Data_admin/insert"><button class="btn btn-primary">Tambah Data Barang</button></a>
+            <a href="<?php echo base_url() ?>index.php/admin/Data_admin/insert"><button class="btn btn-primary">Tambah Data Admin</button></a>
             <tr>
               <th>No</th>
               <th>Nama Lengkap</th>
@@ -52,4 +52,3 @@
     </div>
   </div>
   <?php $this->load->view('admin/Sidebar/dataadmin'); ?>
-  <?php $this->load->view('admin/Home/Footer'); ?>

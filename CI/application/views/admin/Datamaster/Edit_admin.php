@@ -8,7 +8,7 @@
             <div class="col-md-12">
                     <div class="card">
                                     <div class="card-header">
-                                        <div class="card-title">Form Mengedit Data Barang</div>
+                                        <div class="card-title">Form Edit Data Admin</div>
                                     </div>
                                     <div class="card-body">
                                         <form method="post" action="<?php echo base_url(). 'index.php/admin/Data_admin/editaction'; ?>" enctype="multipart/form-data">
@@ -48,4 +48,3 @@
                             </div>
                 </div>
 <?php $this->load->view('admin/Sidebar/dataadmin'); ?>
-<?php $this->load->view('admin/Home/Footer'); ?>

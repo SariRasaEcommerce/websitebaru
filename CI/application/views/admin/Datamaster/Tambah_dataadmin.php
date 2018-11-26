@@ -47,4 +47,3 @@
                                 </div>
                     </div>
 <?php $this->load->view('admin/Sidebar/dataadmin'); ?>
-<?php $this->load->view('admin/Home/Footer'); ?>
