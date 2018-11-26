@@ -20,7 +20,7 @@
 								<p>Beranda</p>
 							</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item active">
 							<a href="<?php echo base_url() ?>index.php/admin/Data_barang">
 								<i class="la la-table"></i>
 								<p>Data Barang</p>
@@ -41,17 +41,26 @@
 <!-- 								<span class="badge badge-count">6</span>
  -->							</a>
 						</li>
-						<li class="nav-item active">
-							<a href="<?php echo base_url() ?>index.php/admin/Data_transaksi">
-								<i class="la la-bell"></i>
-								<p>Data Transaksi</p>
-<!-- 								<span class="badge badge-success">3</span>
+
+						<li class="nav-item">
+							<a href="<?php echo base_url() ?>index.php/admin/Upload_bukti">
+								<i class="la la-th"></i>
+								<p>Upload Bukti</p>
+<!-- 								<span class="badge badge-count">6</span>
  -->							</a>
 						</li>
+
 						<li class="nav-item">
 							<a href="<?php echo base_url() ?>index.php/admin/Data_admin">
 								<i class="la la-font"></i>
 								<p>Data Admin</p>
+<!-- 								<span class="badge badge-danger">25</span>
+ -->							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url() ?>index.php/admin/Slideshow">
+								<i class="la la-font"></i>
+								<p>Data Slideshow</p>
 <!-- 								<span class="badge badge-danger">25</span>
  -->							</a>
 						</li>

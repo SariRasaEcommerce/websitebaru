@@ -27,7 +27,7 @@
 <!-- 								<span class="badge badge-count">14</span>
  -->							</a>
 						</li>
-						<li class="nav-item active">
+						<li class="nav-item">
 							<a href="<?php echo base_url() ?>index.php/admin/Data_pengguna">
 								<i class="la la-keyboard-o"></i>
 								<p>Data Pengguna</p>
@@ -57,7 +57,7 @@
 <!-- 								<span class="badge badge-danger">25</span>
  -->							</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item active">
 							<a href="<?php echo base_url() ?>index.php/admin/Slideshow">
 								<i class="la la-font"></i>
 								<p>Data Slideshow</p>

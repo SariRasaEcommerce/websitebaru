@@ -41,6 +41,7 @@
 <!-- 								<span class="badge badge-count">6</span>
  -->							</a>
 						</li>
+
 						<li class="nav-item">
 							<a href="<?php echo base_url() ?>index.php/admin/Upload_bukti">
 								<i class="la la-th"></i>
@@ -48,10 +49,18 @@
 <!-- 								<span class="badge badge-count">6</span>
  -->							</a>
 						</li>
+
 						<li class="nav-item active">
 							<a href="<?php echo base_url() ?>index.php/admin/Data_admin">
 								<i class="la la-font"></i>
 								<p>Data Admin</p>
+<!-- 								<span class="badge badge-danger">25</span>
+ -->							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url() ?>index.php/admin/Slideshow">
+								<i class="la la-font"></i>
+								<p>Data Slideshow</p>
 <!-- 								<span class="badge badge-danger">25</span>
  -->							</a>
 						</li>
