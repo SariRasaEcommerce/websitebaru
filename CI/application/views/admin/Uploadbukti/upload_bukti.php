@@ -7,7 +7,6 @@
     <div class="content">
       <div class="container-fluid">
         <h4 class="page-title">Pembayaran</h4>
-        <h4 class="page-title">Data Pembayaran</h4>
         <div class="row">
           <div class="col-md-12">
             <div class="card">
@@ -99,4 +98,3 @@
               </div>
             </div>
             <?php $this->load->view('admin/Sidebar/upload_bukti'); ?>
-            <?php $this->load->view('admin/Home/Footer'); ?>
