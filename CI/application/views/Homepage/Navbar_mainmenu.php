@@ -8,7 +8,7 @@
 							<li class="<?php if($this->uri->segment('1')=="Home"){echo "active";}?>"><a href="<?php echo base_url('Home')?>">Home</a></li>					
 							<li class="<?php if($this->uri->segment('1')=="Produk"){echo "active";}?>"><a href="<?php echo base_url('Produk')?>">Produk</a></li>
 							<li class="<?php if($this->uri->segment('1')=="About_us"){echo "active";}?>"><a href="<?php echo base_url('About_us')?>">About Us</a></li>
-							<li class="<?php if($this->uri->segment('1')=="Contact"){echo "active";}?>"><a href="./products.html">Contact Us</a></li>
+							<li class="<?php if($this->uri->segment('1')=="Contact"){echo "active";}?>"><a href="<?php echo base_url('Contact_Us')?>">Contact Us</a></li>
 						</ul>
 					</nav>
 				</div>

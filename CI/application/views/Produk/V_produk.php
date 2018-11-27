@@ -13,12 +13,13 @@
 								
 								
 							<li class="span3">
-								<div class="product-box">
+								<a href="<?php echo base_url('Produk/detailproduk')?>"><div class="product-box">
 									<span class="sale_tag"></span>												
-									<a href="<?php echo base_url('Detail_produk')?>"><img alt="" src="<?php echo base_url().$barang->IMG?>"></a><br/>
-									<a href="product_detail.html" class="title"><?php echo $barang->NAMA_BARANG?></a><br/>
+									<a href="<?php echo base_url('Produk/detailproduk')?>"><img alt="" src="<?php echo base_url().$barang->IMG?>"></a><br/>
+									<a href="<?php echo base_url()?>Produk/detailproduk/<?php echo $barang->ID_BARANG ?>" class="title"><?php echo $barang->NAMA_BARANG?></a><br/>
 									<p class="price"><?php echo $barang->HARGA_BARANG?></p>
 								</div>
+								</a>
 							</li>       
 							<?php } ?>
 							

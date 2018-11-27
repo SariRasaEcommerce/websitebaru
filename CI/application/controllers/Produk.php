@@ -12,6 +12,13 @@ public function index()
 		$data['produk']=$this->M_produk->select('tbl_barang');
 		$this -> load -> view('Produk/V_produk',$data);
 	}
+public function detailproduk($id)
+	{
+		$where  = array('ID_BARANG' => $id, );
+		$data['produk']=$this->M_produk->selectwhere('tbl_barang', $where)->row();
+		$this -> load -> view('Produk/V_produkdetail', $data);
+	}
+
 }
 
 ?>

@@ -12,11 +12,11 @@
 						<table class="table table-striped">
 							<thead>
 								<tr>
-									<th>Remove</th>
-									<th>Image</th>
-									<th>Product Name</th>
-									<th>Quantity</th>
-									<th>Unit Price</th>
+									<th>Tandai</th>
+									<th>Gambar</th>
+									<th>Nama Produk</th>
+									<th>Jumlah</th>
+									<th>Harga Satuan</th>
 									<th>Total</th>
 								</tr>
 							</thead>

@@ -9,20 +9,10 @@ class M_produk extends CI_Model{
 		$this->db->limit(3) ;
 		return $this->db->get($table) ;
 	}
-	public function selectwhere($table,$data){
-		return $this->db->get_where($table, $data);
+	public function selectwhere($table,$where){
+		return $this->db->get_where($table, $where);
 	}
-	function delete($where,$table){
-		$this->db->where($where);
-		$this->db->delete($table);
-	}
-	public function update($table,$data,$where){
-		$this->db->update($table,$data,$where);
-	}
-
-	public function insert($table,$data){
-		$this->db->insert($table,$data);
-	}
+	
 } 
 
 ?>

@@ -29,19 +29,19 @@ class Login extends CI_Controller {
                 'nama' => $nama_pel,
                 'status' => "login"
                 );
- 
+            
             $this->session->set_userdata($data_session);
  
-            redirect(base_url("index.php/Home"));
+            redirect(base_url("Home?".$data_session['id_pelanggan']));
  
         }else{
-            redirect(base_url("index.php/Login"));
+            redirect(base_url("Login"));
         }
     }
  
     function logout(){
         $this->session->sess_destroy();
-        redirect(base_url('index.php/Login'));
+        redirect(base_url('Login'));
     }
 
     function aksi_register(){
