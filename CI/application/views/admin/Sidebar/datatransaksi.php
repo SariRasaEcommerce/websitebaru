@@ -2,7 +2,7 @@
 				<div class="scrollbar-inner sidebar-wrapper">
 					<div class="user">
 						<div class="photo">
-							<img src="<?php echo base_url() ?>assets/webadmin/img/profile.jpg">
+							<img src="<?php echo base_url() ?>assets/admin/webadmin/img/profile.jpg">
 						</div>
 						<div class="info">
 							<a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
@@ -15,43 +15,52 @@
 					</div>
 					<ul class="nav">
 						<li class="nav-item">
-							<a href="<?php echo base_url() ?>index.php/Home">
+							<a href="<?php echo base_url() ?>index.php/admin/Home">
 								<i class="la la-dashboard"></i>
 								<p>Beranda</p>
 							</a>
 						</li>
-						<li class="nav-item">
-							<a href="<?php echo base_url() ?>index.php/Data_barang">
+						<li class="nav-item active">
+							<a href="<?php echo base_url() ?>index.php/admin/Data_barang">
 								<i class="la la-table"></i>
 								<p>Data Barang</p>
 <!-- 								<span class="badge badge-count">14</span>
  -->							</a>
 						</li>
 						<li class="nav-item">
-							<a href="<?php echo base_url() ?>index.php/Data_pengguna">
+							<a href="<?php echo base_url() ?>index.php/admin/Data_pengguna">
 								<i class="la la-keyboard-o"></i>
 								<p>Data Pengguna</p>
 <!-- 								<span class="badge badge-count">50</span>
  -->							</a>
 						</li>
 						<li class="nav-item">
-							<a href="<?php echo base_url() ?>index.php/Data_pmsan">
+							<a href="<?php echo base_url() ?>index.php/admin/Data_pmsan">
 								<i class="la la-th"></i>
 								<p>Data Pemesanan</p>
 <!-- 								<span class="badge badge-count">6</span>
  -->							</a>
 						</li>
-						<li class="nav-item active">
-							<a href="<?php echo base_url() ?>index.php/Data_transaksi">
-								<i class="la la-bell"></i>
-								<p>Data Transaksi</p>
-<!-- 								<span class="badge badge-success">3</span>
+
+						<li class="nav-item">
+							<a href="<?php echo base_url() ?>index.php/admin/Upload_bukti">
+								<i class="la la-th"></i>
+								<p>Upload Bukti</p>
+<!-- 								<span class="badge badge-count">6</span>
+ -->							</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="<?php echo base_url() ?>index.php/admin/Data_admin">
+								<i class="la la-font"></i>
+								<p>Data Admin</p>
+<!-- 								<span class="badge badge-danger">25</span>
  -->							</a>
 						</li>
 						<li class="nav-item">
-							<a href="<?php echo base_url() ?>index.php/Data_admin">
+							<a href="<?php echo base_url() ?>index.php/admin/Slideshow">
 								<i class="la la-font"></i>
-								<p>Data Admin</p>
+								<p>Data Slideshow</p>
 <!-- 								<span class="badge badge-danger">25</span>
  -->							</a>
 						</li>

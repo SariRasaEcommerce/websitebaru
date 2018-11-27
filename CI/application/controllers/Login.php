@@ -22,11 +22,11 @@ class Login extends CI_Controller {
             );
         $cek = $this->M_login->cek_login("tbl_pelanggan",$where)->num_rows();
         $cek2 = $this->M_login->cek_login("tbl_pelanggan",$where)->row();
-        if($cek > 0){
+        if($cek > 0  && $cek2 ->STATUS_PEL == "Terkonfirmasi"){
  
             $data_session = array(
-                'id_pelanggan'   => $cek2 -> id_pelanggan,
-                'nama' => $nama_pel,
+                'id_pelanggan' => $cek2 ->ID_PELANGGAN,
+                'email' => $email,
                 'status' => "login"
                 );
             
@@ -52,6 +52,7 @@ class Login extends CI_Controller {
         $tgl_lahir = $this->input->post('tanggal');
         $email = $this->input->post('email');
         $password = $this->input->post('password');
+        $status = "Belum Terkonfirmasi";
         $where = array(
             'nama_pel' => $nama_pel,
             'alamat_pel' => $alamat_pel,
@@ -59,7 +60,8 @@ class Login extends CI_Controller {
             'jk' => $jk,
             'tgl_lahir' => $tgl_lahir,
             'email' => $email,
-            'password' => $password           
+            'password' => $password,   
+            'status_pel' => $status        
             );
         $this -> M_login -> register('tbl_pelanggan',$where);
         redirect(base_url("index.php/Login"));

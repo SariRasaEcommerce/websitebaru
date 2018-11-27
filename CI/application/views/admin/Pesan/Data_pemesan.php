@@ -1,12 +1,9 @@
-  <?php $this->load->view('Home/js'); ?>
-  <?php $this->load->view('Home/Main_header'); ?>
+  <?php $this->load->view('admin/Home/js'); ?>
+  <?php $this->load->view('admin/Home/Main_header'); ?>
   <div class="main-panel">
     <div class="content">
         <div class="container-fluid">
-<<<<<<< HEAD
             <h4 class="page-title">Pemesanan</h4>
-=======
->>>>>>> 0afe52546903ece1151969e50c71e018949dd4f1
             <h4 class="page-title">Data Pemesanan</h4>
             <div class="row">
                 <div class="col-md-12">
@@ -25,7 +22,7 @@
                       <th>Tanggal Order</th>
                       <th>Detail Alamat</th>
                       <th>Status</th>
-                      <th width="115px">Action</th>
+                      <th>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -37,18 +34,16 @@
             ?>
 
             <tr>
-               <td> <?php echo $transaksi -> ID_TRANSAKSI ?> </td>
-                    <td> <?php echo $transaksi -> ID_PELANGGAN; ?> </td>
-                    <td> <?php echo $transaksi -> No_telp; ?> </td>
-                    <td> <?php echo date("d F Y", strtotime($transaksi -> Tgl_order)); ?> </td>
-                    <td> <?php echo $transaksi -> Detail_alamat; ?> </td>
-                      <td> <?php echo $transaksi -> status; ?> </td>
-                    <td width="115px"> 
-                    
-                      <h5>
-                        <a class="btn btn-success" title="Kirim Pesanan" onclick="return confirm('Anda ingin mengirim barang ini ?')" href="./bin/fungsi_update_order.php?id=<?php echo $transaksi -> kd_order; ?>" ><i class="fa fa-truck" style="color: #fff" ></i> </a > 
-                        <a class="btn btn-primary" title="Lihat Barang" name=detail href="./?page=detail&id=<?php echo $transaksi -> kd_order ?>"> <i class="fa fa-eye" ></i> </a>
-                      </h5> 
+               <td> <?php echo $transaksi -> ID_DETAILTRANSAKSI ?> </td>
+                    <td> <?php echo $transaksi -> NAMA_PEL; ?> </td>
+                    <td> <?php echo $transaksi -> NO_TELP; ?> </td>
+                    <td> <?php echo date("d F Y", strtotime($transaksi -> TGL_TRANSAKSI)); ?> </td>
+                    <td> <?php echo $transaksi -> ALAMAT_PEL; ?> </td>
+                    <td>aa</td>
+                    <td><a href="#">
+                      <a href="#"><button class="btn btn-primary">DIKEMAS</button></a>
+                      <a href="#"><button class="btn btn-primary">DIKIRIM</button></a>
+                      <a href="#"><button class="btn btn-primary">LIHAT</button></a>
                     </td>
             </tr>
 
@@ -66,4 +61,5 @@
 
     </div>
   </div>
-  <?php $this->load->view('Sidebar/datapemesanan'); ?>
+  <?php $this->load->view('admin/Sidebar/datapemesanan'); ?>
+  <?php $this->load->view('admin/Home/Footer'); ?>

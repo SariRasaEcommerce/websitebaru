@@ -25,18 +25,18 @@ class Proseslogin extends CI_Controller {
         if($cek > 0){
  
             $data_session = array(
-                'ID_ADMIN'   => $cek2->ID_ADMIN,
+                'ID_ADMIN'   => $cek2-> ID_ADMIN,
                 'nama' => $username,
                 'status' => "login"
                 );
  
             $this->session->set_userdata($data_session);
  
-            redirect(base_url("index.php/Home"));
+            redirect(base_url("index.php/admin/Home"));
  
         }else{
             echo "<script>alert('Username dan Password Salah !');</script>";
-            redirect(base_url("index.php"));
+            redirect(base_url("admin/Proseslogin"));
         }
     }
  

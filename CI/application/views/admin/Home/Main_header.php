@@ -3,7 +3,7 @@
 	<div class="wrapper">
 		<div class="main-header">
 			<div class="logo-header">
-				<a href="<?php echo base_url() ?>index.php/Home" class="logo">
+				<a href="<?php echo base_url() ?>index.php/admin/Home" class="logo">
 					Sari Rasa
 				</a>
 				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,11 +40,11 @@
 							</ul>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false"> <img src="<?php echo base_url() ?>assets/webadmin/img/profile.jpg" alt="user-img" width="36" class="img-circle"><span >Admin</span></span> </a>
+							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false"> <img src="<?php echo base_url() ?>assets/admin/webadmin/img/profile.jpg" alt="user-img" width="36" class="img-circle"><span >Admin</span></span> </a>
 							<ul class="dropdown-menu dropdown-user">
 								<li>
 									<div class="user-box">
-										<div class="u-img"><img src="<?php echo base_url() ?>assets/webadmin/img/profile.jpg" alt="user"></div>
+										<div class="u-img"><img src="<?php echo base_url() ?>assets/admin/webadmin/img/profile.jpg" alt="user"></div>
 										<div class="u-text">
 											<h4><?php echo $this->session->userdata('nama'); ?></h4>
 											<!-- <p class="text-muted">rahmadi@gmail.com</p></div> -->
@@ -57,7 +57,7 @@
 									<div class="dropdown-divider"></div>
 									<a class="dropdown-item" href="#"><i class="ti-settings"></i>Pengaturan</a>
 									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="<?php echo base_url('index.php/Proseslogin/logout'); ?>"><i class="fa fa-power-off"></i>Keluar</a>
+									<a class="dropdown-item" href="<?php echo base_url('index.php/admin/Proseslogin/logout'); ?>"><i class="fa fa-power-off"></i>Keluar</a>
 								</ul>
 								<!-- /.dropdown-user -->
 							</li>

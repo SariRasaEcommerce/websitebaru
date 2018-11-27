@@ -15,7 +15,7 @@ class Data_pmsan extends CI_Controller {
 		$data = array(
 			'data_transaksi' => $this -> Datapesanan_model -> get_datatransaksi(),
 		);
-		$this->load->view('Pesan/Data_pemesan', $data);
+		$this->load->view('admin/Pesan/Data_pemesan', $data);
 		
 	}
 

@@ -1,6 +1,6 @@
- <?php $this->load->view('Home/js'); ?>
+ <?php $this->load->view('admin/Home/js'); ?>
 
-  <?php $this->load->view('Home/Main_header'); ?>
+  <?php $this->load->view('admin/Home/Main_header'); ?>
 
   <div class="main-panel">
 
@@ -46,6 +46,9 @@
 
               <th>Email</th>
 
+              <th>Status</th>
+
+              <th>Action</th>
             </tr>
 
           </thead>
@@ -64,7 +67,7 @@
 
             <tr>
 
-              <th scope="row"><?php echo $no++?></th>
+              <!-- <th scope="row"><?php echo $no++?></th> -->
 
               <td><?php echo $pengguna -> ID_PELANGGAN ?></td>
 
@@ -80,6 +83,11 @@
 
               <td><?php echo $pengguna -> EMAIL ?></td>
 
+              <td><?php echo $pengguna -> STATUS_PEL ?></td>
+
+
+               <td><a href="<?php echo base_url('index.php/Data_pengguna/confirm/'.$pengguna -> ID_PELANGGAN) ?>"><button class="btn btn-primary">KONFIRMASI</button></a>
+                                                <a href="<?php echo base_url('index.php/Data_pengguna/delete/'.$pengguna-> ID_PELANGGAN) ?>" ><button class="btn btn-primary" onclick="javascript: return confirm('Anda Yakin Akan Menghapus ?')">HAPUS</button></a></td>
             </tr>
 
             <?php
@@ -97,11 +105,5 @@
     </div>
 
   </div>
-<<<<<<< HEAD
-  <?php $this->load->view('Sidebar/datapengguna'); ?>
-=======
 
-  <?php $this->load->view('Sidebar/datapengguna'); ?>
-
->>>>>>> 0afe52546903ece1151969e50c71e018949dd4f1
-  <?php $this->load->view('Home/Footer'); ?>
+  <?php $this->load->view('admin/Sidebar/datapengguna'); ?>
