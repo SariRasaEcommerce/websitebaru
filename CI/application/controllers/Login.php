@@ -21,20 +21,20 @@ class Login extends CI_Controller {
             'Password' => $password
             );
         $cek = $this->M_login->cek_login("tbl_pelanggan",$where)->num_rows();
-        $cek2 = $this->M_login->cek_login("tbl_pelanggan",$where)->row();
-        if($cek > 0  && $cek2 ->STATUS_PEL == "Terkonfirmasi"){
+        if($cek > 0){
  
             $data_session = array(
-                'id_pelanggan' => $cek2 ->ID_PELANGGAN,
-                'email' => $email,
+                'id_pelanggan'   => $cek2 -> id_pelanggan,
+                'nama' => $nama_pel,
                 'status' => "login"
                 );
             
             $this->session->set_userdata($data_session);
  
-            redirect(base_url("Home?".$data_session['id_pelanggan']));
+            redirect(base_url("Home".$data_session['id_pelanggan']));
  
         }else{
+            
             redirect(base_url("Login"));
         }
     }
@@ -52,7 +52,6 @@ class Login extends CI_Controller {
         $tgl_lahir = $this->input->post('tanggal');
         $email = $this->input->post('email');
         $password = $this->input->post('password');
-        $status = "Belum Terkonfirmasi";
         $where = array(
             'nama_pel' => $nama_pel,
             'alamat_pel' => $alamat_pel,
@@ -60,8 +59,7 @@ class Login extends CI_Controller {
             'jk' => $jk,
             'tgl_lahir' => $tgl_lahir,
             'email' => $email,
-            'password' => $password,   
-            'status_pel' => $status        
+            'password' => $password           
             );
         $this -> M_login -> register('tbl_pelanggan',$where);
         redirect(base_url("index.php/Login"));
