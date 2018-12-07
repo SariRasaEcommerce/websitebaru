@@ -21,6 +21,7 @@ class Login extends CI_Controller {
             'Password' => $password
             );
         $cek = $this->M_login->cek_login("tbl_pelanggan",$where)->num_rows();
+        $cek2 = $this->M_login->cek_login("tbl_pelanggan",$where)->row();
         if($cek > 0){
  
             $data_session = array(
@@ -29,8 +30,7 @@ class Login extends CI_Controller {
                 'status' => "login"
                 );
             
-            $this->session->set_userdata($data_session);
- 
+            $data_session=$this->session->userdata('id_pelanggan'); 
             redirect(base_url("Home".$data_session['id_pelanggan']));
  
         }else{

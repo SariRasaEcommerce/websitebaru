@@ -10,12 +10,11 @@ class Transaksi extends CI_Controller {
 	}
 	public function index()
 	{
-		$id = $this->session->userdata('id_pelanggan');
-		var_dump($id);
-		$data['transaksi']=$this->M_transaksi->transaksi($id)->row();
+		$where=$this->session->userdata('id_pelanggan');
+		$data['pemesan']=$this-> M_transaksi -> selectwhere('tbl_pelanggan', $where);
+		$data['transaksi']=$this-> M_transaksi -> transaksi();
 		$this -> load -> view('Transaksi/V_transaksi', $data);
 	}
-	
 
 }
 

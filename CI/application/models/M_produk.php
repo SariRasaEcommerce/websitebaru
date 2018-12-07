@@ -12,6 +12,9 @@ class M_produk extends CI_Model{
 	public function selectwhere($table,$where){
 		return $this->db->get_where($table, $where);
 	}
+	public function chart($table,$data){
+		$this->db->insert($table,$data);
+	}
 	
 } 
 
