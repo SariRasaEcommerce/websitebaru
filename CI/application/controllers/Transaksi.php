@@ -7,6 +7,7 @@ class Transaksi extends CI_Controller {
 		$this->load->model('M_transaksi');
 		$this->load->model('M_login');
 		$this -> load ->library('session');
+		$this->load->helper(array('form','url'));
 	}
 	public function index()
 	{

@@ -1,4 +1,4 @@
-<?php $this->load->view('Homepage/Javascript_footer'); ?>
+ <?php $this->load->view('Homepage/Javascript_footer'); ?>
 <?php $this->load->view('Homepage/Top_bar'); ?>
 <?php $this->load->view('Homepage/Navbar_mainmenu'); ?>
 <?php $this->load->view('Login/Header_text'); ?>
@@ -17,7 +17,8 @@
 										<h4 class="example-title">Upload Bukti Pembayaran</h4>
 										<div class="example">
 											<input type="file" class="dropify-event" name="img" accept="images/*" required>
-										</div>							
+										</div>	
+										<p>ukuran file max 300kb</p>						
 										<button class="btn btn-inverse pull-right">Confirm order</button>
 									</div>
 								</div>
