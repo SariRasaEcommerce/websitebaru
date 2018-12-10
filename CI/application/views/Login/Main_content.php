@@ -83,7 +83,7 @@
 									</div>
 								</div>	
 								<hr>
-								<div class="actions"><input tabindex="9" class="btn btn-inverse large" type="submit" value="Create your account"></div>
+								<div class="actions"><input onclick="index.php/admin/Notifikasiakun/notifyMe('Notification','Ada member yang masuk')" tabindex="9" class="btn btn-inverse large" type="submit" value="Create your account"></div>
 							</fieldset>
 						</form>					
 					</div>				

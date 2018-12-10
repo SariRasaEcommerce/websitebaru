@@ -86,8 +86,8 @@
               <td><?php echo $pengguna -> STATUS_PEL ?></td>
 
 
-               <td><a href="<?php echo base_url('index.php/Data_pengguna/confirm/'.$pengguna -> ID_PELANGGAN) ?>"><button class="btn btn-primary">KONFIRMASI</button></a>
-                                                <a href="<?php echo base_url('index.php/Data_pengguna/delete/'.$pengguna-> ID_PELANGGAN) ?>" ><button class="btn btn-primary" onclick="javascript: return confirm('Anda Yakin Akan Menghapus ?')">HAPUS</button></a></td>
+               <td><a href="<?php echo base_url('index.php/admin/Data_pengguna/confirm/'.$pengguna -> ID_PELANGGAN) ?>"><button class="btn btn-primary">KONFIRMASI</button></a>
+                                                <a href="<?php echo base_url('index.php/admin/Data_pengguna/delete/'.$pengguna-> ID_PELANGGAN) ?>" ><button class="btn btn-primary" onclick="javascript: return confirm('Anda Yakin Akan Menghapus ?')">HAPUS</button></a></td>
             </tr>
 
             <?php

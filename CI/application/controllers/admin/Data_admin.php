@@ -74,7 +74,7 @@ public function edit($id){
         					'allowed_types' => 'gif|jpg|png'
         					);
         $this -> load -> library ('upload',$config);
-        $admin = $this -> input -> post('admin');
+        $adminn = $this -> input -> post('admin');
         $email = $this -> input -> post('email');
         $alamat = $this -> input -> post('alamat');
         $pass = $this -> input -> post('pass');
@@ -82,10 +82,10 @@ public function edit($id){
         if($_FILES['img']['tmp_name']!=NULL){
         	if($this -> upload -> do_upload('img')){
         		$upload_data = $this -> upload -> data();
-        		$row = $this -> Data_obat -> get_by_id($this -> input -> post('id'));
+        		$row = $this -> Dataadmin_model -> get_by_id($this -> input -> post('id'));
         		unlink($row -> img);
         		$data = array(
-        			'NAMA_ADMIN' => $admin,
+        			'NAMA_ADMIN' => $adminn,
         			'EMAIL' => $email,
         			'ALAMAT' => $alamat,
         			'PASSWORD' => $pass,
@@ -99,7 +99,7 @@ public function edit($id){
         	}
         }else{
         	$data = array(
-        			'NAMA_ADMIN' => $admin,
+        			'NAMA_ADMIN' => $adminn,
         			'EMAIL' => $email,
         			'ALAMAT' => $alamat,
         			'PASSWORD' => $pass,
