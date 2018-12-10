@@ -21,8 +21,8 @@
 									<li class="span3">
 										<div class="product-box">
 											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img src="<?php echo base_url().$barang->IMG?>" alt="" /></a></p>
-											<a href="product_detail.html" class="title"><?php echo $barang->NAMA_BARANG?></a><br/>
+											<p><a href="<?php echo base_url()?>Produk/detailproduk/<?php echo $barang->ID_BARANG ?>"><img src="<?php echo base_url().$barang->IMG?>" alt="" /></a></p>
+											<a href="<?php echo base_url()?>Produk/detailproduk/<?php echo $barang->ID_BARANG ?>" class="title"><?php echo $barang->NAMA_BARANG?></a><br/>
 											<p class="price"><?php echo $barang->HARGA_BARANG?></p>
 										</div>
 									</li>

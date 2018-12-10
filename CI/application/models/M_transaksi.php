@@ -15,15 +15,10 @@ class M_transaksi extends CI_Model{
 	public function upload($table,$data){
 		$this->db->insert($table,$data);
 	}
-	function transaksi($id){
-		$this->db->select('tbl_transaksi., tbl_barang., tbl_pelanggan.*');
-		$this->db->join('tbl_barang', 'tbl_barang.ID_BARANG = tbl_transaksi.ID_BARANG');
-		$this->db->join('tbl_pelanggan', 'tbl_pelanggan.ID_PELANGGAN = tbl_transaksi.ID_PELANGGAN');
-		$this->db->from('tbl_transaksi');
-		$this->db->where("tbl_pelanggan.ID_PELANGGAN",$id);
-		$data=$this->db->get();
-		return $data;
+	function transaksi(){
+		return $this->db->query('SELECT * FROM tbl_transaksi, tbl_barang, tbl_pelanggan WHERE tbl_transaksi.ID_BARANG=tbl_barang.ID_BARANG AND tbl_transaksi.ID_PELANGGAN=tbl_pelanggan.ID_PELANGGAN');
 	}
+	
 	
 } 
 
