@@ -36,4 +36,4 @@
                                         </form>
                                 </div>
                     </div>
-<?php $this->load->view('Sidebar/slideshow'); ?>
+<?php $this->load->view('admin/Sidebar/slideshow'); ?>

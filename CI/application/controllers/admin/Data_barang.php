@@ -90,14 +90,14 @@ public function edit($id){
         if($_FILES['img']['tmp_name']!=NULL){
         	if($this -> upload -> do_upload('img')){
         		$upload_data = $this -> upload -> data();
-        		$row = $this -> Data_obat -> get_by_id($this -> input -> post('id'));
+        		$row = $this -> Databarang_model -> get_by_id($this -> input -> post('id'));
         		unlink($row -> img);
         		$data = array(
         			'ID_ADMIN' => $adminn,
         			'NAMA_BARANG' => $nm_barang,
         			'BERAT' => $brt,
         			'DESKRIPSI' => $des,
-        			'IMG' => "assets/webadmin/img/".$upload_data['file_name'],
+        			'IMG' => "./gambar/produk/".$upload_data['file_name'],
         			'HARGA_BARANG' => $hrg,
         			'STOK' => $stokk,
         		);

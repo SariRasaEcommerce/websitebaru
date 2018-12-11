@@ -1,4 +1,4 @@
-<?php $this->load->view('admin/Home/js'); ?>
+  <?php $this->load->view('admin/Home/js'); ?>
   <?php $this->load->view('admin/Home/Main_header'); ?>
   <div class="main-panel">
     <div class="content">
@@ -43,6 +43,6 @@
                             </div>
                         </div>
     </div>
-<?php $this->load->view('Sidebar/slideshow'); ?>
+<?php $this->load->view('admin/Sidebar/slideshow'); ?>
 
 <!-- <a class="btn btn-success" onclick="return confirm('Anda ingin untuk mengubah data ?')" href="./?page=update_slideshow&id=<?php echo $slideshow -> kd_slideshow; ?>" > <i class="fa fa-edit" style="color: #fff" ></i> </a >  -->
