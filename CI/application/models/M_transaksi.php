@@ -18,6 +18,11 @@ class M_transaksi extends CI_Model{
 	function transaksi(){
 		return $this->db->query('SELECT * FROM tbl_transaksi, tbl_barang, tbl_pelanggan WHERE tbl_transaksi.ID_BARANG=tbl_barang.ID_BARANG AND tbl_transaksi.ID_PELANGGAN=tbl_pelanggan.ID_PELANGGAN');
 	}
+	function insert(){
+		$sql = sprintf("INSERT INTO tbl_buktitf VALUES ('%s')",
+			$this -> img);
+		$this -> db -> query($sql);
+		}
 	
 	
 } 

@@ -12,7 +12,7 @@ public function index()
 	{
 		$where=$this->session->userdata('id_pelanggan');
 		// die($where);
-		$data['checkout']=$this-> M_checkout -> checkout();
+		$data['checkout']=$this-> M_checkout -> get_item();
 		$this -> load -> view('Checkout/V_checkout',$data);
 	}
 

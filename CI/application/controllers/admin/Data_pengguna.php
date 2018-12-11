@@ -26,7 +26,7 @@ class Data_pengguna extends CI_Controller {
 				);
 		$res = $this -> Datapengguna_model -> update ($id,$data);
         		if ($res >= 0) {
-        			header('location:'.base_url().'index.php/Data_pengguna');
+        			header('location:'.base_url().'index.php/admin/Data_pengguna');
         		}
 	}
 
