@@ -4,10 +4,10 @@
  */
 class Dataupload_model extends CI_Model
 {
-	public $id ='ID_BUKTI';
-	public $table ='tbl_buktitf';
+	public $id ='ID_DETAILTRANSAKSI';
+	public $table ='tbl_detailtransaksi';
 		function get_dataupload(){
-			return $this->db->query('SELECT tbl_buktitf.ID_BUKTI, tbl_buktitf.ID_DETAILTRANSAKSI, tbl_buktitf.STATUS, tbl_detailtransaksi.TOTAL, tbl_buktitf.IMG FROM tbl_buktitf, tbl_detailtransaksi WHERE tbl_buktitf.ID_DETAILTRANSAKSI = tbl_detailtransaksi.ID_DETAILTRANSAKSI')->result();
+			return $this->db->query('SELECT tbl_detailtransaksi.ID_DETAILTRANSAKSI, tbl_detailtransaksi.TOTAL, tbl_detailtransaksi.GAMBAR_TF, tbl_detailtransaksi.STATUS_TRANSFER, tbl_pelanggan.NAMA_PEL FROM tbl_detailtransaksi, tbl_pelanggan WHERE tbl_detailtransaksi.ID_PELANGGAN = tbl_pelanggan.ID_PELANGGAN')->result();
 		}
 		function updatetf(){
 			$this->db->where($this->id, $id);

@@ -20,7 +20,7 @@ class Upload_bukti extends CI_Controller {
         $id =  $this -> input -> post('id_bukti');
         $status = $this -> input -> post('status');
 		$data = array(
-			'ID_BUKTI'=> $id,
+					'ID_BUKTI'=> $id,
         			'STATUS' => $status,
         		);
         		$res = $this -> Dataupload_model -> updatetf ($this -> input -> post('id'),$data);

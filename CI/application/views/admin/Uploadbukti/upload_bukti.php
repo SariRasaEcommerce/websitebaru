@@ -15,11 +15,11 @@
                   <table class="table table-bordered">
                     <thead>
                       <tr>
-                        <th>No. </th>
                         <th>No. Pesanan</th>
-                        <th>Status Upload</th>
+                        <th>Nama Pelanggan</th>
                         <th>Total Bayar</th>
                         <th>Gambar</th>
+                        <th>Status Bayar</th>
                         <th>Action</th>
                       </tr>
                     </thead>
@@ -29,16 +29,16 @@
                       {
                         ?>
                         <tr>
-                          <th scope="row"><?php echo $upload -> ID_BUKTI ?></th>
                           <td><?php echo $upload -> ID_DETAILTRANSAKSI ?></td>
-                          <td><?php echo $upload -> STATUS ?></td>
+                          <td><?php echo $upload -> NAMA_PEL; ?></td>
                           <td><?php echo $upload  -> TOTAL ?></td>
-                          <td><img src="<?php echo base_url().$upload -> IMG ?>" width="100" height="70"></td>
-                          <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal<?php echo $upload -> ID_BUKTI ?>">TRANSFER</button>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#lihatgambar<?php echo $upload -> ID_BUKTI ?>">LIHAT GAMBAR</button>
+                          <td><img src="<?php echo base_url().$upload -> GAMBAR_TF ?>" width="100" height="70"></td>
+                          <td><?php echo $upload -> STATUS_TRANSFER ?></td>
+                          <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal<?php echo $upload -> ID_DETAILTRANSAKSI ?>">TRANSFER</button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#lihatgambar<?php echo $upload -> ID_DETAILTRANSAKSI ?>">LIHAT GAMBAR</button>
                           </td>
                           <!-- EDIT TRANSFER -->
-                          <div class="modal fade" id="myModal<?php echo $upload -> ID_BUKTI ?>" role="dialog">
+                          <div class="modal fade" id="myModal<?php echo $upload -> ID_DETAILTRANSAKSI ?>" role="dialog">
                             <div class="modal-dialog">
                               <!-- Modal content-->
                               <div class="modal-content">
@@ -65,7 +65,7 @@
                           </div>
                           <!-- TUTUP EDIT TRANSFER -->
                           <!-- LIHAT GAMBAR -->
-                          <div class="modal fade" id="lihatgambar<?php echo $upload -> ID_BUKTI ?>" role="dialog">
+                          <div class="modal fade" id="lihatgambar<?php echo $upload -> ID_DETAILTRANSAKSI ?>" role="dialog">
                             <div class="modal-dialog">
                               <!-- Modal content-->
                               <div class="modal-content">
@@ -75,7 +75,7 @@
                                 </div>
                                 <div class="modal-body form-group">
                                 <form method="post" action="#">
-                                <img src="<?php echo base_url().$upload -> IMG ?>" width="480" height="450">
+                                <img src="<?php echo base_url().$upload -> GAMBAR_TF ?>" width="480" height="450">
                                   </select>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
