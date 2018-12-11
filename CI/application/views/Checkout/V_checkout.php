@@ -39,8 +39,7 @@
 				<hr>
 				<p class="cart-total right">
 					<strong>Sub-Total</strong>:	$100.00<br>
-					<strong>Eco Tax (-2.00)</strong>: $2.00<br>
-					<strong>VAT (17.5%)</strong>: $17.50<br>
+					<strong>Ongkos Kirim</strong>: $2.00<br>
 					<strong>Total</strong>: $119.50<br>
 				</p>
 				<hr/>
