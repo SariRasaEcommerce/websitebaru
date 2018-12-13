@@ -25,13 +25,13 @@ class Login extends CI_Controller {
         if($cek > 0){
  
             $data_session = array(
-                'id_pelanggan'   => $cek2 -> id_pelanggan,
-                'nama' => $nama_pel,
+                'id_pelanggan'   => $cek2 -> ID_PELANGGAN,
+                'email' => $email,
                 'status' => "login"
                 );
             
             $data_session=$this->session->userdata('id_pelanggan'); 
-            redirect(base_url("Home".$data_session['id_pelanggan']));
+            redirect(base_url("index.php/Home"));
  
         }else{
             
@@ -62,7 +62,7 @@ class Login extends CI_Controller {
             'password' => $password           
             );
         $this -> M_login -> register('tbl_pelanggan',$where);
-        redirect(base_url("index.php/Login"));
+        redirect(base_url("Login"));
     }
 }
 ?>

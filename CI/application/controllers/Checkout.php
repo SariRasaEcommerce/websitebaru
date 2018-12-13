@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 class Checkout extends CI_Controller {
 function __construct()
@@ -22,6 +22,10 @@ public function index()
 		$data['pemesan']=$this-> M_transaksi -> selectwhere('tbl_pelanggan', $where);
 		$data['transaksi']=$this-> M_transaksi -> transaksi();
 		$this -> load -> view('Checkout/V_detail', $data);
+	}
+	public function total()
+	{
+	
 	}
 }
 

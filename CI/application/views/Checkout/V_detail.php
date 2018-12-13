@@ -41,12 +41,19 @@
 																	<tr>
 																		<td><?php echo $trans->NAMA_BARANG?></td>
 																		<td class="text-center"><?php echo $trans->HARGA_BARANG?></td>
-																		<td class="text-center">1</td>
-																		<td class="text-right">$10.99</td>
+																		<td class="text-center"><?php echo $trans->QTY?></td>
+																		<td class="text-right"><?php echo $total = $trans->QTY * $trans->HARGA_BARANG?></td>
 																	</tr>
+
 																</tbody>
 															<?php } ?>
 														</table>
+														<hr>
+														<p class="cart-total right">
+															<strong>Sub-Total</strong>:	<br>
+															<strong>Ongkos kirim </strong>: <br>
+															<strong>Total</strong>: <br>
+														</p>
 													</div>
 												</div>
 											</div>
@@ -92,18 +99,16 @@
 
 										</div>
 									</div>
-									<hr>
-									<p class="cart-total right">
-										<strong>Sub-Total</strong>:	$100.00<br>
-										<strong>Eco Tax (-2.00)</strong>: $2.00<br>
-										<strong>VAT (17.5%)</strong>: $17.50<br>
-										<strong>Total</strong>: $119.50<br>
-									</p>
+									
 								</div>
-								<?php } ?>
-							</div>
-											
+							<?php } ?>
 						</div>
+
 					</div>
-					<?php $this->load->view('Homepage/Footer'); ?>
-					<?php $this->load->view('Homepage/Copyright'); ?>
+				</div>
+
+
+			</div>
+
+			<?php $this->load->view('Homepage/Footer'); ?>
+			<?php $this->load->view('Homepage/Copyright'); ?>

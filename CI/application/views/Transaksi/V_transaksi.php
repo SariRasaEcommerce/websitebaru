@@ -10,22 +10,36 @@
 			<div class="accordion" id="accordion2">
 				<div class="accordion-group">
 					<div id="collapseOne" class="accordion-body in collapse">
-						<div class="page-container">
-							<div class="accordion-inner">
-								<div class="row-fluid">
-									<div class="col-md-6 col-lg-4">
-										<h4 class="example-title">Upload Bukti Pembayaran</h4>
-										<div class="example">
-											<input type="file" class="dropify-event" name="upload" accept="images/*" required>
-										</div>	
-										<p>ukuran file max 300kb</p>		
-										<div class="form-group form-material floating" data-plugin="formMaterial">
-											<div class="input-group">
-												<span class="input-group-btn">				
-													<button class="btn btn-inverse pull-right" name="btnSubmit" type="submit">Confirm order</button>
-												</span>
+						<div class="page-content">
+
+
+							<!-- Panel Table Add Row -->
+							
+									<div class="panel">
+										<div class="panel-heading">
+											<div class="panel-body container-fluid">
+												<form autocomplete="off" method="post" action="<?php echo base_url(). 'Transaksi/aksi_upload'; ?>" enctype="multipart/form-data">
+													<div class="col-md-6 col-lg-4">
+														<h4 class="example-title">Upload Bukti Pembayaran</h4>
+														<div class="example">
+															<input type="file" id="input-file-events" class="dropify-event" data-default-file="../../global/photos/view-6-960x640.jpg" name="GAMBAR_TF">
+															
+														</div>
+
+														<div class="form-group form-material floating" data-plugin="formMaterial">
+															<div class="input-group">
+																<span class="input-group-btn">        
+																	<button class="btn btn-inverse pull-right" name="btnSubmit" type="submit">Confirm order</button>
+																</span>
+															</div>
+														</div>
+														<br>
+													</div>
+												</form>
 											</div>
 										</div>
+										<!-- End Panel Table Add Row -->   
+
 									</div>
 								</div>
 							</div>
@@ -33,63 +47,11 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<br>
-	<div class="row">
-		<div class="span12">
-			<div class="accordion" id="accordion2">
-				<div class="accordion-group">
-					<div id="collapseOne" class="accordion-body in collapse">
-						<div class="page-container">
-							<div class="accordion-inner">
-
-
-
-								<div class="row-fluid">
-									<div class="col-md-12">
-										<div class="panel panel-default">
-											<div class="panel-heading">
-												<h3 class="panel-title"><strong>History Pemesanan</strong></h3>
-											</div>
-											<div class="panel-body">
-												<div class="table-responsive">
-													<table class="table table-condensed">
-														<thead>
-															<tr>
-																<td><strong>Tanggal Transaksi</strong></td>
-																<td class="text-center"><strong>Barang</strong></td>
-																<td class="text-center"><strong>Jumlah</strong></td>
-																<td class="text-right"><strong>Total Harga</strong></td>
-															</tr>
-														</thead>
-														<?php 
-														foreach ($transaksi->result() as $trans) 
-															{?>
-																<tbody>
-																	<!-- foreach ($order->lineItems as $line) or some such thing here -->
-																	<tr>
-																		<td><?php echo $trans->NAMA_BARANG?></td>
-																		<td class="text-center"><?php echo $trans->HARGA_BARANG?></td>
-																		<td class="text-center">1</td>
-																		<td class="text-right">$10.99</td>
-																	</tr>
-																</tbody>
-															<?php } ?>
-														</table>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+			<br>
+			
 
 
 
 
-
-					<?php $this->load->view('Homepage/Footer'); ?>
-					<?php $this->load->view('Homepage/Copyright'); ?>
+							<?php $this->load->view('Homepage/Footer'); ?>
+							<?php $this->load->view('Homepage/Copyright'); ?>

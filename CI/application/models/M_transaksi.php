@@ -1,4 +1,4 @@
-<?php 
+ <?php 
 
 class M_transaksi extends CI_Model{ 
 	public function select($table){
@@ -15,14 +15,16 @@ class M_transaksi extends CI_Model{
 	public function upload($table,$data){
 		$this->db->insert($table,$data);
 	}
-	function transaksi(){
-		return $this->db->query('SELECT * FROM tbl_transaksi, tbl_barang, tbl_pelanggan WHERE tbl_transaksi.ID_BARANG=tbl_barang.ID_BARANG AND tbl_transaksi.ID_PELANGGAN=tbl_pelanggan.ID_PELANGGAN');
+	public function insert($table,$data){
+		$this->db->insert($table,$data);
 	}
-	function insert(){
-		$sql = sprintf("INSERT INTO tbl_buktitf VALUES ('%s')",
-			$this -> img);
-		$this -> db -> query($sql);
-		}
+	
+	function transaksi()
+	{
+		return $this->db->query('SELECT * FROM tbl_keranjang, tbl_barang, tbl_pelanggan WHERE tbl_keranjang.ID_BARANG=tbl_barang.ID_BARANG AND tbl_keranjang.ID_PELANGGAN=tbl_pelanggan.ID_PELANGGAN');
+	}
+	
+
 	
 	
 } 

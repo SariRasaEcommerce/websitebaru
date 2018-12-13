@@ -1,4 +1,4 @@
-<?php $this->load->view('Homepage/Javascript_footer'); ?>
+ <?php $this->load->view('Homepage/Javascript_footer'); ?>
 <?php $this->load->view('Homepage/Top_bar'); ?>
 <?php $this->load->view('Homepage/Navbar_mainmenu'); ?>
 <?php $this->load->view('Login/Header_text'); ?>
@@ -28,9 +28,9 @@
 								<td><input type="checkbox" value="option1"></td>
 								<td><a href="product_detail.html"><img alt="" src="<?php echo $keranjang->IMG?>"></a></td>
 								<td><?php echo $keranjang->NAMA_BARANG?></td>
-								<td><input type="text" placeholder="1" class="input-mini"></td>
+								<td><?php echo $keranjang->QTY?></td>
 								<td><?php echo $keranjang->HARGA_BARANG?></td>
-								<td>$2,350.00</td>
+								<td><?php echo $total = $keranjang->QTY * $keranjang->HARGA_BARANG?></td>
 							</tr>	
 						</tbody>
 					<?php } ?>
@@ -38,9 +38,7 @@
 
 				<hr>
 				<p class="cart-total right">
-					<strong>Sub-Total</strong>:	$100.00<br>
-					<strong>Ongkos Kirim</strong>: $2.00<br>
-					<strong>Total</strong>: $119.50<br>
+					<strong>Sub-Total</strong>:	<br>
 				</p>
 				<hr/>
 				<p class="buttons center">

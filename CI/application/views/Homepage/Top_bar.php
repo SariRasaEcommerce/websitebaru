@@ -13,6 +13,7 @@
 							<li><?php echo $akun->NAMA_PEL; ?></li>
 							<li><a href="<?php echo base_url('Checkout')?>">Keranjang</a></li>
 							<li><a href="<?php echo base_url('Transaksi')?>">Transaksi</a></li>					
+							<li><a href="<?php echo base_url('History')?>">History</a></li>	
 							<li><a href="<?php echo base_url('Login/logout')?>">Logout</a></li>		
 						</ul>
 					</div>

@@ -14,3 +14,7 @@
 
 </body>
 </html>
+
+
+							<?php $this->load->view('Homepage/Footer'); ?>
+							<?php $this->load->view('Homepage/Copyright'); ?>
