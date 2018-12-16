@@ -56,7 +56,7 @@
 									<div class="dropdown-divider"></div>
 									<a class="dropdown-item" href="#"><i class="ti-settings"></i>Pengaturan</a>
 									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="http://localhost/sarirasa/website/CI/index.php/admin/webadmin/Proseslogin/logout"><i class="fa fa-power-off"></i>Keluar</a>
+									<a class="dropdown-item" href="<?php echo base_url() ?>index.php/admin/Proseslogin/logout"><i class="fa fa-power-off"></i>Keluar</a>
 								</ul>
 								<!-- /.dropdown-user -->
 							</li>
