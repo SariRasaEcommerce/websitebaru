@@ -25,14 +25,14 @@ class Slideshow extends CI_Controller {
 
 	public function create(){
 		$config = array(
-			'upload_path' => './gambar/produk/',
+			'upload_path' => './gambar/slideshow/',
     		'allowed_types' => 'gif|jpg|png'
     	);
     	$this->load->library('upload', $config);
     	if ($this->upload->do_upload('img')){
     		$upload_data = $this -> upload -> data ();
     		$adminn = $this->session->userdata('ID_ADMIN');
-    		$foto = "./gambar/produk/".$upload_data['file_name'];
+    		$foto = "./gambar/slideshow/".$upload_data['file_name'];
 			$data = array(
 				'ID_SLIDE' => $this->session->userdata('ID_SLIDE'),
 				'ID_ADMIN' => $adminn,
