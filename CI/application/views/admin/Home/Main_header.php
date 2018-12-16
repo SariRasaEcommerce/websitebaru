@@ -39,7 +39,7 @@
 							</ul>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false"> <img src="http://localhost/sarirasa/website/CI/assets/admin/webadmin/img/profile.jpg" alt="user-img" width="36" class="img-circle"><span>Admin</span> </a>
+							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false"> <img src="<?php echo base_url() ?>assets/admin/webadmin/img/profile.jpg" alt="user-img" width="36" class="img-circle"><span>Admin</span> </a>
 							<ul class="dropdown-menu dropdown-user">
 								<li>
 									<div class="user-box">
