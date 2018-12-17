@@ -43,10 +43,10 @@
 							<ul class="dropdown-menu dropdown-user">
 								<li>
 									<div class="user-box">
-										<div class="u-img"><img src="assets/admin/webadmin/img/profile.jpg" alt="user"></div>
+										<div class="u-img"><img src="<?php echo base_url() ?>assets/admin/webadmin/img/profile.jpg" alt="user"></div>
 										<div class="u-text">
 											<!-- <h4></h4> -->
-											<!-- <p class="text-muted">rahmadi@gmail.com</p></div> -->
+											<p class="text-muted"><?php echo $this->session->userdata('nama'); ?></p>
 										</div>
 									</div></li>
 									<div class="dropdown-divider"></div>
